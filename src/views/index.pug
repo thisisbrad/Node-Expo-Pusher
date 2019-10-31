@@ -1,0 +1,17 @@
+html
+  head
+    title= title
+  body
+    h1= message
+    div
+      form(action='/token',method='post')
+        div
+          fieldset(data-role='controlgroup')
+            label(for='token') token
+              input(id='token',type='text',value='',placeholder='token',name='token')
+        div
+          fieldset(data-role='controlgroup')
+            label(for='message') message
+              input(id='message',type='text',value='',placeholder='message',name='message')
+        div 
+          input(type='submit',value='Submit Token')
