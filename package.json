@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "expo-server-sdk": "^3.3.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.4",
+    "pug": "^2.0.4"
+  },
+  "name": "node-expo-pusher",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thisisbrad/Node-Expo-Pusher.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thisisbrad/Node-Expo-Pusher/issues"
+  },
+  "homepage": "https://github.com/thisisbrad/Node-Expo-Pusher#readme"
+}
