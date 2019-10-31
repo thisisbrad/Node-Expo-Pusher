@@ -3,6 +3,8 @@ const path = require('path');
 const { json, urlencoded } = require('body-parser');
 const morgan = require('morgan');
 
+const Pusher = require('./src/services/pusher');
+
 const app = express();
 app.use(json());
 app.use(urlencoded({ extended: false }));
@@ -22,6 +24,9 @@ app.get('/', (req, res) => {
 
 app.post('/token', function(req, res) {
   const { token, message } = req.body;
+  // TODO: Make a way to figure out one token or multiple
+  const pusher = new Pusher([token], message);
+  pusher.push();
   res.render('token', { token, message });
 });
 
